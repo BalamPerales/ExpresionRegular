@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/img/favico.png" type="image/x-icon">
+    <title>Examen Unidad 4</title>
+</head>
+<body class="text-light">
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h1 class="text-danger fw-bold">Plantilla Examen Unidad 4</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-8 col-lg-6">
+                <div class="card bg-secondary bg-opacity-10 border-secondary shadow rounded-4">
+                    <div class="card-header bg-transparent border-secondary text-center py-3">
+                        <h4 class="mb-0 text-info fw-semibold">Expresiones Regulares</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <form id="formulario">
+                            <div class="mb-3">
+                                <label for="expresion" class="form-label fw-semibold">Expresión Regular</label>
+                                <div class="input-group">
+                                    <span class="input-group-text border-secondary text-danger font-monospace">/</span>
+                                    <input type="text" class="form-control border-secondary font-monospace" id="expresion">
+                                    <span class="input-group-text border-secondary text-danger font-monospace">/</span>
+                                </div>
+                                <div class="form-text text-secondary">
+                                    Escribe la expresión regular
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="texto" class="form-label fw-semibold">Texto</label>
+                                <textarea class="form-control border-secondary" id="texto" rows="3" placeholder="Ingresa un texto"></textarea>
+                            </div>
+
+                            <div class="d-grid gap-2 d-sm-flex justify-content-sm-end">
+                                <button type="button" id="botonLimpiar" class="btn btn-outline-light px-4">Limpiar</button>
+                                <button type="submit" id="botonComparar" class="btn btn-danger px-4 fw-semibold">Comparar</button>
+                            </div>
+                        </form>
+
+                        <div id="resultado" class="mt-4 d-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="./bundle.js"></script>
+</body>
+</html>
